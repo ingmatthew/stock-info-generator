@@ -1,10 +1,10 @@
 from lxml import html
 import requests
 import json
-import numpy as np
 import pandas as pd
 from pandas.tseries.holiday import USFederalHolidayCalendar
 from pandas.tseries.offsets import CustomBusinessDay
+from decimal import Decimal
 import yfinance as yf
 from StyleFrame import StyleFrame, Styler, utils
 from datetime import datetime, date
@@ -31,7 +31,7 @@ def get_headers():
 #for TSE tickers remember to add '.TO' as in 'Ticker.TO'
 def getInfo(ticker):
     link = "http://finance.yahoo.com/quote/%s?p=%s" % (ticker, ticker)
-    response = requests.get(link, verify=False, headers=get_headers(), timeout=10)
+    response = requests.get(link, verify=False, headers=get_headers(), timeout=100)
     parser = html.fromstring(response.text)
     summary_table = parser.xpath(
         '//div[contains(@data-test,"summary-table")]//tr')
@@ -130,26 +130,25 @@ def get_earnings_dates(df):
     na_dict={}
     for index, row in df.iterrows():
         try:
-            date=datetime.strptime(df.loc[index, 'Earnings Date'][:10], '%Y-%m-%d')
-            date_list.append(date)
+            dates=datetime.strptime(df.loc[index, 'Earnings Date'][:10], '%Y-%m-%d')
+            date_list.append(dates)
         except:
             na_dict[df.loc[index,'Stock Names']]= 'No reported date'
     
     date_list.sort()
     sorted_dates = [datetime.strftime(ts, "%Y-%m-%d") for ts in date_list]
-    
     sorted_dict={}
     
-    for date in sorted_dates:
+    for dates in sorted_dates:
         for index, row in df.iterrows():
-            if (df.loc[index, 'Earnings Date'][:10]==date):
-                sorted_dict[df.loc[index,'Stock Names']] = date + ' ' + df.loc[index, 'Earnings Date'][11:]
+            if (df.loc[index, 'Earnings Date'][:10]==dates):
+                sorted_dict[df.loc[index,'Stock Names']] = dates + ' ' + df.loc[index, 'Earnings Date'][11:]
              
     if (na_dict):
         sorted_dict.update(na_dict)
     
     sorted_df=pd.DataFrame(list(sorted_dict.items()), columns=['Stock Names','Earnings Date'])
-    
+
     return sorted_df
 
 #export the data to a more formatted excel document
@@ -173,6 +172,7 @@ def styled_excel(file_input, dividends, prices):
     earnings_df=get_earnings_dates(stock_df)
     sf_earnings=StyleFrame(earnings_df)
     col_list_earnings=list(earnings_df.columns)
+
     sf_earnings.to_excel(excel_writer=writer, sheet_name = 'Upcoming Earnings Dates', best_fit=col_list_earnings)  
     
     if (dividends==True):
@@ -313,6 +313,8 @@ def plot_prices(ticker_list, path, input_start, input_end):
 #-will be prompted for date range if prices==True
 #styled_excel(file_name.xlsx, dividends, prices)
 #example here
+
+
 styled_excel('input.xlsx', True, True)
 
 

@@ -8,7 +8,7 @@ With many companies struggling to maintain liquidity and bond yields so low, now
 
 In such volatile circumstances, the  *stock-info-generator* is a tool that has helped me and will hopefully help other investors stay up to date with the stock market!
 
-The following libraries were used:
+The following libraries were used and need to be downloaded in order to run the program:
 * *pandas* to manipulate the data
 * *styleframe* to format the excel output display
 * *openpyxl* to plot the data 
@@ -19,11 +19,19 @@ The following libraries were used:
 ## How It Works
 
 #### 1. Create a spreadsheet with the stock tickers for the stocks you are interested in using the following format.
-<img src="https://user-images.githubusercontent.com/55144676/83339363-0eca7000-a29b-11ea-9629-ee9a5c60f26a.JPG" width="150" height="300">
+<img src="https://user-images.githubusercontent.com/55144676/83339363-0eca7000-a29b-11ea-9629-ee9a5c60f26a.JPG" width="175" height="300">
 
 *Input excel file with Stock Names as header and 10 stock tickers below*
 
-#### 2. 
+#### 2. Choose whether to output dividend and/or price data.
+<img src="https://user-images.githubusercontent.com/55144676/83339727-9e255280-a29e-11ea-8656-f466326f46c3.JPG" width="500" height="175">
+
+#### 3. Run the file!
+
+### Output
+![stock info pic](https://user-images.githubusercontent.com/55144676/83339758-d9278600-a29e-11ea-949a-288c5f3af4df.JPG)
+![dividends pic](https://user-images.githubusercontent.com/55144676/83339766-e5abde80-a29e-11ea-9acc-cb1f9bc7a1ea.JPG)
+![price pic](https://user-images.githubusercontent.com/55144676/83339767-e6dd0b80-a29e-11ea-895b-d862c041173c.JPG)
 
 
 

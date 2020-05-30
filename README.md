@@ -30,8 +30,15 @@ The following libraries were used and need to be downloaded in order to run the 
 
 ### Output
 ![stock info pic](https://user-images.githubusercontent.com/55144676/83339758-d9278600-a29e-11ea-949a-288c5f3af4df.JPG)
+*The rest of the stock information can be found by scrolling to the right!*
+
+
 ![dividends pic](https://user-images.githubusercontent.com/55144676/83339766-e5abde80-a29e-11ea-9acc-cb1f9bc7a1ea.JPG)
+*Dividends for the last 10 quarters as an example*
+
+
 ![price pic](https://user-images.githubusercontent.com/55144676/83339767-e6dd0b80-a29e-11ea-895b-d862c041173c.JPG)
+*From 2015-01-08 to 2020-01-08*
 
 
 

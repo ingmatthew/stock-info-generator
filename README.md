@@ -20,6 +20,7 @@ The following libraries were used:
 
 #### 1. Create a spreadsheet with the stock tickers for the stocks you are interested in using the following format.
 <img src="https://user-images.githubusercontent.com/55144676/83339363-0eca7000-a29b-11ea-9629-ee9a5c60f26a.JPG" width="150" height="300">
+
 *Input excel file with Stock Names as header and 10 stock tickers below*
 
 #### 2. 

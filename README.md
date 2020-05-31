@@ -19,12 +19,12 @@ The following libraries were used and need to be downloaded in order to run the 
 ## How It Works
 
 #### 1. Create a spreadsheet with the stock tickers for the stocks you are interested in using the following format.
-<img src="https://user-images.githubusercontent.com/55144676/83339363-0eca7000-a29b-11ea-9629-ee9a5c60f26a.JPG" width="175" height="300">
+<img src="https://user-images.githubusercontent.com/55144676/83339363-0eca7000-a29b-11ea-9629-ee9a5c60f26a.JPG" width="175" height="250">
 
 *Input excel file with Stock Names as header and 10 stock tickers below*
 
 #### 2. Choose whether to output dividend and/or price data.
-<img src="https://user-images.githubusercontent.com/55144676/83339727-9e255280-a29e-11ea-8656-f466326f46c3.JPG" width="500" height="175">
+<img src="https://user-images.githubusercontent.com/55144676/83339727-9e255280-a29e-11ea-8656-f466326f46c3.JPG" width="500" height="150">
 
 #### 3. Run the file!
 
@@ -33,8 +33,12 @@ The following libraries were used and need to be downloaded in order to run the 
 *The rest of the stock information can be found by scrolling to the right!*
 
 
+
+
 ![dividends pic](https://user-images.githubusercontent.com/55144676/83339766-e5abde80-a29e-11ea-9acc-cb1f9bc7a1ea.JPG)
 *Dividends for the last 10 quarters as an example*
+
+
 
 
 ![price pic](https://user-images.githubusercontent.com/55144676/83339767-e6dd0b80-a29e-11ea-895b-d862c041173c.JPG)

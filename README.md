@@ -16,6 +16,8 @@ The following libraries were used and need to be downloaded in order to run the 
 * *yahoo_fin* for live price data
 * *yahoo_finance* for historical dividends and prices
 
+##### *The "output with added macros" file contains additional features to analyze outputted stock information. The modules can be copied to your own output spreadsheet to help analyze and compare your stocks of interest with one another.*
+
 ## How It Works
 
 #### 1. Create a spreadsheet with the stock tickers for the stocks you are interested in using the following format.

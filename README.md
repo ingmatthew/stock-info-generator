@@ -17,6 +17,7 @@ The following libraries were used and need to be downloaded in order to run the 
 * *yahoo_finance* for historical dividends and prices
 
 ##### *The "output with added macros" file contains additional features to analyze outputted stock information. The modules can be copied to your own output spreadsheet to help analyze and compare your stocks of interest with one another.*
+![macros pic](https://user-images.githubusercontent.com/55144676/83574565-be058200-a4fb-11ea-8816-8e68d5f98f5d.JPG)
 
 ## How It Works
 

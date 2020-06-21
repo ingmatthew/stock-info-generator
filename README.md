@@ -12,7 +12,7 @@ The following libraries were used and need to be downloaded in order to run the 
 * *pandas* to manipulate the data
 * *styleframe* to format the excel output display
 * *openpyxl* to plot the data 
-* *lxml, json, requests* to scrape the yahoo finance page for stock information
+* *lxml* to scrape the yahoo finance page for stock information
 * *yahoo_fin* for live price data
 * *yahoo_finance* for historical dividends and prices
 
